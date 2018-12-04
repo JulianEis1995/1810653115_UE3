@@ -6,32 +6,34 @@ public class Aufgabe2_1810653115
     {
         //Ausgabe von 3 Buchstaben
         partialString("alfre");
+        System.out.println();
+        System.out.println("----------------------------");
+        System.out.println();
         //Ausgabe eines Fehlers
         partialString("ja");
 
     }
 
-    public static void partialString(String a)
+    public static String partialString(String a)
     {
-        if(a.length() < 3)
-        {
-            System.err.println("ungültige Zeichenkette");
-        }
-        else
+        if (a.length() > 3)
         {
             //Länger herausfinden bspw. hans = 4 Zeichen
             int l = a.length();
 
-            //Nebenrechnung -> Ergebnis 2 -> fängt bei Char 2 an
-            int ausgabe = 5/2;
-            System.out.println(ausgabe);
-
             //Substring = starten ab best. Position
             // hier hans = 4 Zeichen / 2 = 2 Zeichen -> Start 2 Zeichen
             // zweite Hälfte vom String
-            System.out.println(a.substring(l/2));
 
-            //RETURN VALUE!!!
+            System.out.println("Volle Ausgabe: " + a);
+            System.out.println("Ausgabe lt. Aufgabe: " + a.substring(l / 2));
+
+            return a;
+        }
+        else
+        {
+            System.out.println("ungültige Zeichenkette");
+            return "ungültige Zeichenkette";
         }
     }
 }
