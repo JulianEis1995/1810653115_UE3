@@ -16,9 +16,10 @@ public class Aufgabe4_1810653115
         double timeR = System.currentTimeMillis() - startR;
         System.out.println(timeR/1000 + " s elapsed");
         System.out.println("---------------------------------");
-        System.out.println("Fibonacci iterativ");
+
 
         //Fibonacci iterativ
+        System.out.println("Fibonacci iterativ");
         int startI = 0;
         System.out.println("fib(" + a + ") =  " + fibonacciIterativ(a));
         double timeI = System.currentTimeMillis() - startI;
