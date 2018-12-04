@@ -30,6 +30,8 @@ public class Aufgabe2_1810653115
             // hier hans = 4 Zeichen / 2 = 2 Zeichen -> Start 2 Zeichen
             // zweite Hälfte vom String
             System.out.println(a.substring(l/2));
+
+            //RETURN VALUE!!!
         }
     }
 }
